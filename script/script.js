@@ -116,9 +116,7 @@ function borrar(tabla){
 
 //funciòn para visualizar los datos
 function mostrardatos(tabla){
-    const imprimirDatos = prompt("Ingrese 1 para Imprimir los datos?");
-    
-    if (imprimirDatos==="1") {
+    if (confirm("¿Imprimir los datos?")) {
         console.log(tabla.join(" - "));
     }
 }
